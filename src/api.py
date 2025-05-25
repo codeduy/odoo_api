@@ -46,21 +46,8 @@ async def root():
             <div class="endpoint">
                 <h3>Nhập dữ liệu khách hàng</h3>
                 <p><code>POST /import/contacts</code></p>
-                <p>File Excel cần có các cột: name, email, phone, company_type, street, city, zip, country_id, is_company</p>
+                <p>File Excel cần có các cột: name, email, phone, ...</p>
             </div>
-            
-            <div class="endpoint">
-                <h3>Nhập dữ liệu Lead/Opportunity</h3>
-                <p><code>POST /import/leads</code></p>
-                <p>File Excel cần có các cột: name, contact_name, partner_id, email_from, phone, stage_id, expected_revenue, description</p>
-            </div>
-            
-            <div class="endpoint">
-                <h3>Nhập dữ liệu đơn hàng</h3>
-                <p><code>POST /import/sales</code></p>
-                <p>File Excel cần có các cột: partner_id, order_line (JSON format)</p>
-            </div>
-            
             <p>Để xem documentation đầy đủ và test API, truy cập <a href="/docs">/docs</a></p>
         </body>
     </html>

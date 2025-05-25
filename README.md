@@ -22,10 +22,12 @@ pip install -r requirements.txt
 Copy `.env.example` to `.env` and update with your Odoo settings:
 ```
 ODOO_URL=http://your-odoo-server:8069
-ODOO_DB=your-database
+ODOO_DB=your-database  # Database name can be found at http://localhost:8069/web/database/manager
 ODOO_USERNAME=your-username
 ODOO_PASSWORD=your-password
 ```
+
+
 
 3. Run the API:
 ```bash
@@ -46,38 +48,12 @@ POST /import/{data_type}
 ```
 Import data from an Excel file. `data_type` can be:
 - products
-- customers
+- contacts
 - sales
 
 Parameters:
 - `file`: Excel file (required)
-- `sheet_name`: Sheet name in Excel file (optional)
-
-## Excel File Format
-
-### Products
-Required columns:
-- name: Product name
-- list_price: Product price
-- type: Product type (consu, service, product)
-
-### Customers
-Required columns:
-- name: Customer name
-- email: Customer email
-- phone: Phone number
-
-### Sales Orders
-Required columns:
-- partner_id: Customer ID
-- order_line: Product lines (JSON format)
-
-## Testing
-
-Run tests with:
-```bash
-pytest tests/
-```
+- `sheet_name`: Sheet name in Excel file (optional) - Leave empty to import all sheets
 
 ## Error Handling
 

@@ -3,7 +3,7 @@ import numpy as np
 from typing import List, Dict, Any, Optional
 import json
 import os
-from odoo_connection import OdooConnection
+from .odoo_connection import OdooConnection
 
 class DataImporter:
     def __init__(self, odoo_connection: OdooConnection):
