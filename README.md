@@ -55,6 +55,27 @@ Parameters:
 - `file`: Excel file (required)
 - `sheet_name`: Sheet name in Excel file (optional) - Leave empty to import all sheets
 
+### Field Mapping Guide
+
+To ensure correct data mapping in your Excel files, you need to use the exact field names from Odoo. Here's how to find the correct field names:
+
+1. Enable Developer Mode in Odoo:
+   - Go to Settings
+   - Scroll to the bottom of the page
+   - Click "Activate Developer Mode"
+
+2. Find Field Names:
+   - Navigate to the model you want to work with (e.g., Contacts, Products)
+   - Click the "Bug" icon (🐞) in the top menu bar
+   - Select "View Fields"
+   - You'll see a list showing:
+     - Field names (use these in your Excel headers)
+     - Field types (char, integer, many2one, etc.)
+     - Required fields (marked with *)
+     - Field descriptions and constraints
+
+Make sure your Excel file headers match the Odoo field names exactly.
+
 ## Error Handling
 
 The API returns appropriate HTTP status codes:
