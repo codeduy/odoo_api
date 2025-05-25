@@ -67,7 +67,7 @@ To ensure correct data mapping in your Excel files, you need to use the exact fi
 2. Find Field Names:
    - Navigate to the model you want to work with (e.g., Contacts, Products)
    - Click the "Bug" icon (🐞) in the top menu bar
-   - Select "View Fields"
+   - Select "Fields"
    - You'll see a list showing:
      - Field names (use these in your Excel headers)
      - Field types (char, integer, many2one, etc.)
